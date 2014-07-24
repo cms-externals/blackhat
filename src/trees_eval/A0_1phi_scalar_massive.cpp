@@ -67,7 +67,7 @@ template <int i0, int i1, int i2, int i3, class T> complex<T>  A1ph2sc1gM3_eval(
 	
 
 
-template <class T> complex<T> (*A1ph2sc1gM_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T> complex<T> (*A1ph2sc1gM_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 	//	cout << hex << hc << dec << endl;
 	switch (hc) {
 			
@@ -345,7 +345,7 @@ template <int i1, int i2, int i3, int i4, int i5, class T> complex<T>  A1ph2sc2q
 
 }
 
-template <class T> complex<T> (*A1ph2sc2qM_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A1ph2sc2qM_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
     switch (hc) {
 		case 0x94234: //2169: //(ph,s,qb-,q+,s)
@@ -619,17 +619,17 @@ template <class T> complex<T> (*A1ph2sc2qM_Tree_Ptr_eval(long hc))(const eval_pa
 	}
 }
 	
-template complex<R> (*A1ph2sc1gM_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A1ph2sc1gM_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A1ph2sc1gM_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A1ph2sc1gM_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A1ph2sc1gM_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A1ph2sc1gM_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 
-template complex<R> (*A1ph2sc2qM_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A1ph2sc2qM_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A1ph2sc2qM_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A1ph2sc2qM_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A1ph2sc2qM_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A1ph2sc2qM_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 			
 #if BH_USE_GMP
-template complex<RGMP> (*A1ph2sc1gM_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
-template complex<RGMP> (*A1ph2sc2qM_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A1ph2sc1gM_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A1ph2sc2qM_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 
 #endif
 

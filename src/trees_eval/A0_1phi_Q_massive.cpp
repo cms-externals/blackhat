@@ -615,7 +615,7 @@ template <int i0, int i1, int i2, int i3,  class T> complex<T>  A1ph2q2QM2fm_16_
 	//_MESSAGE8("16m: Q+,q+,q2+,Q2+ : ",i0,", ",i1,", ",i2,", ",i3);
 	return -_HIGGS_SCALAR_SCALAR_PARAM*mass*complex<T>(0,-1)*(f1.Lt()*ep.p(i1)->Lt())*(ep.p(i2)->Lt()*fn.Lt())/(T(8)*ep.sp(i0,i1)*ep.sp(i2,i3));}
 
-template <class T, int QMPOS, int QPOS, int QPOS2, int QMPOS2> complex<T> (*A1ph2q2QM_Tree_Ptr_non_higgs_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T, int QMPOS, int QPOS, int QPOS2, int QMPOS2> complex<T> (*A1ph2q2QM_Tree_Ptr_non_higgs_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 //	cout << hex << " hqQq2Q2:" << hc << dec << endl;
 	switch(hc){
 		case 0x07090805: //8631://(Q+,q3+,qb3-,Qb+)
@@ -1659,7 +1659,7 @@ template <class T, int QMPOS, int QPOS, int QPOS2, int QMPOS2> complex<T> (*A1ph
 	}
 }
 
-template <class T> complex<T> (*A1ph2q2QM_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T> complex<T> (*A1ph2q2QM_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 	// We first extract the position of the higgs and then analyse the colour ordered particles in the next level down
 	long rem=hc;
 	long newhc=0;
@@ -2010,7 +2010,7 @@ template <int i0, int i2, int i3, class T> complex<T>  A1ph2QM1g15p_eval(const e
 									   -(ep.ref()->Lt()*ep.p(i2)->Lt())*(ep.p(i2)->L()*f4.L())*fac1/((rf.L()*ep.p(i2)->L())*(f1.Lt()*ep.ref()->Lt())));
 }
 
-template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_simp_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_simp_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 	//	cout << hex << hc << dec << endl;
 	
 	switch (hc) {
@@ -2088,7 +2088,7 @@ template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_sim
 	}
 }
 	
-template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_simp_dag_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_simp_dag_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 	//	cout << hex << hc << dec << endl;
 	
 	switch (hc) {
@@ -2166,7 +2166,7 @@ template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_sim
 }
 			
 			
-template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_simp_full_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_simp_full_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 	//	cout << hex << hc << dec << endl;
 	
 	switch (hc) {
@@ -2311,7 +2311,7 @@ template <class T, int QPOS, int GLUE, int QPOS2> complex<T> (*A1ph2QM1g_phi_sim
 	}
 }
 	
-template <class T> complex<T> (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) {
+template <class T> complex<T> (*A1ph2QM1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) {
 	// We first extract the position of the higgs and then analyse the colour ordered particles in the next level down
 	long rem=hc;
 	long newhc=0;
@@ -2405,17 +2405,17 @@ template <class T> complex<T> (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_par
 }
 
 
-template complex<R> (*A1ph2q2QM_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A1ph2q2QM_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A1ph2q2QM_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A1ph2q2QM_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A1ph2q2QM_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A1ph2q2QM_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 
-template complex<R> (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A1ph2QM1g_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A1ph2QM1g_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A1ph2QM1g_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 
 #if BH_USE_GMP
-template complex<RGMP> (*A1ph2q2QM_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
-template complex<RGMP> (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A1ph2q2QM_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A1ph2QM1g_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 
 #endif
 

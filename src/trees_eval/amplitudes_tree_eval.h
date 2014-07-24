@@ -63,12 +63,12 @@ template <class T> std::complex<T> (*A2QM2q_Tree_Ptr_eval(int hc))(const eval_pa
 template <class T> std::complex<T> (*A1QM1qs_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 template <class T> std::complex<T> (*A1QM1q1gs_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 
-template <class T> std::complex<T>  (*A2q2l2G_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) ;
+template <class T> std::complex<T>  (*A2q2l2G_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) ;
 
-template <class T> std::complex<T>  (*A2q2Q2l_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) ;
-template <class T> std::complex<T>  (*A2q2Q1g2l_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) ;
-template <class T> std::complex<T>  (*A2q2Q2g2l_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) ;
-template <class T> std::complex<T>  (*A2q2Q3g2l_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&) ;
+template <class T> std::complex<T>  (*A2q2Q2l_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) ;
+template <class T> std::complex<T>  (*A2q2Q1g2l_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) ;
+template <class T> std::complex<T>  (*A2q2Q2g2l_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) ;
+template <class T> std::complex<T>  (*A2q2Q3g2l_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&) ;
 
 template <class T> std::complex<T>  (*A2q1g1y_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 
@@ -81,7 +81,7 @@ template <class T> std::complex<T> (*A2QM1g2l_Tree_Ptr_eval(int hc))(const eval_
 template <class T> std::complex<T>  (*A2q2g1y_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 template <class T> std::complex<T>  (*A2q2Q1y_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 
-template <class T> std::complex<T>  (*A2q2G1y_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A2q2G1y_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
 
 template <class T> std::complex<T> (*A2LM1g_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 template <class T> std::complex<T> (*A2LM2g_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
@@ -95,38 +95,38 @@ template <class T> std::complex<T> (*A2QM2q1y_Tree_Ptr_eval(int hc))(const eval_
 
 template <class T> std::complex<T> (*A2s2G_Tree_Ptr_eval(int hc))(const eval_param<T>&, const mass_param_coll&);
 
-template <class T> std::complex<T>  (*A1ph2g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph3g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph1g2q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2g2q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2q2Q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2q2QM_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2sc_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2sc1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2QM1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph1QM1sc1q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2sc2q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph3g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph1g2q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2g2q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2q2Q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2q2QM_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2sc_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2sc1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2QM1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph1QM1sc1q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2sc2q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
 
-template <class T> std::complex<T> (*A2sc1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2sc2g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2sc3g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2scm1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2SM_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T>  (*A1ph2SM1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A1ph1QM1SM1q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A1ph2SM2q_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2sc1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2sc2g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2sc3g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2scm1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2SM_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2SM1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A1ph1QM1SM1q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A1ph2SM2q_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
     
-template <class T> std::complex<T>  (*A1ph2Gsc_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2Gsc1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A1Gsc1gM1g_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T>  (*A1ph2Gsc_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2Gsc1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A1Gsc1gM1g_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
 
 /* special purpose trees */
-template <class T> std::complex<T> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
-template <class T> std::complex<T> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A4g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A5g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2q2g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2q3g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2q2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
+template <class T> std::complex<T> (*A2q1g2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&);
 
 
 

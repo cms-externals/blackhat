@@ -138,7 +138,7 @@ template < int i1, int i2, int i3, int i4, class T> complex<T>  A4g_pppp_G3_eval
 }
 
 
-template <class T> complex<T> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A4g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
         switch (hc) {
     case	0:	return &A4g_mmmm_G3_eval<0,1,2,3>;
@@ -163,11 +163,11 @@ template <class T> complex<T> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<
         }
 }
 
-template complex<R> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A4g_G3_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A4g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A4g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 #if BH_USE_GMP
-template complex<RGMP> (*A4g_G3_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A4g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 #endif
 
 
@@ -237,7 +237,7 @@ template < int i1, int i2, int i3, int i4, class T> complex<T>  A2q2g_qpppqbm_G3
 }
 
 
-template <class T> complex<T> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A2q2g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
         switch (hc) {
     case	129:	return &A2q2g_qmmmqbp_G3_eval<0,1,2,3>;
@@ -254,11 +254,11 @@ template <class T> complex<T> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_para
         }
 }
 
-template complex<R> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A2q2g_G3_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A2q2g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A2q2g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 #if BH_USE_GMP
-template complex<RGMP> (*A2q2g_G3_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A2q2g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 #endif
 
 /*
@@ -299,7 +299,7 @@ template < int i1, int i2, int i3, int i4, class T> complex<T>  A2q2Q_q1pq2bpq2m
 }
 
 
-template <class T> complex<T> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A2q2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
         switch (hc) {
     case	637:	return &A2q2Q_q1mq2bmq2pq1bp_G3_eval<0,1,2,3>;
@@ -312,12 +312,12 @@ template <class T> complex<T> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_para
         }
 }
 
-template complex<R> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A2q2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A2q2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A2q2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 
 #if BH_USE_GMP
-template complex<RGMP> (*A2q2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A2q2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 #endif
 /*
 *
@@ -553,7 +553,7 @@ template < int i1, int i2, int i3, int i4, int i5, class T> complex<T>  A5g_pppp
 }
 
 
-template <class T> complex<T> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A5g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
         switch (hc) {
     case	0:	return &A5g_mmmmm_G3_eval<0,1,2,3,4>;
@@ -594,11 +594,11 @@ template <class T> complex<T> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<
         }
 }
 
-template complex<R> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A5g_G3_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A5g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A5g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 #if BH_USE_GMP
-template complex<RGMP> (*A5g_G3_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A5g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 #endif
 
 /*
@@ -723,7 +723,7 @@ template < int i1, int i2, int i3, int i4, int i5, class T> complex<T>  A2q3g_qp
 }
 
 
-template <class T> complex<T> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A2q3g_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
         switch (hc) {
     case	513:	return &A2q3g_qmmmmqbp_G3_eval<0,1,2,3,4>;
@@ -748,11 +748,11 @@ template <class T> complex<T> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_para
         }
 }
 
-template complex<R> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A2q3g_G3_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A2q3g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A2q3g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 #if BH_USE_GMP
-template complex<RGMP> (*A2q3g_G3_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A2q3g_G3_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 #endif
 
 /*
@@ -989,7 +989,7 @@ template < int i1, int i2, int i3, int i4, int i5, class T> complex<T>  A2q1g2Q_
 }
 
 
-template <class T> complex<T> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<T>&, const mass_param_coll&)
+template <class T> complex<T> (*A2q1g2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<T>&, const mass_param_coll&)
 {
         switch (hc) {
     case	3817:	return &A2q1g2Q_q1mmq2bmq2pq1bp_G3_eval<0,1,2,3,4>;
@@ -1030,11 +1030,11 @@ template <class T> complex<T> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_pa
         }
 }
 
-template complex<R> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<R>&, const mass_param_coll&);
-template complex<RHP> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<RHP>&, const mass_param_coll&);
-template complex<RVHP> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<RVHP>&, const mass_param_coll&);
+template complex<R> (*A2q1g2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<R>&, const mass_param_coll&);
+template complex<RHP> (*A2q1g2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<RHP>&, const mass_param_coll&);
+template complex<RVHP> (*A2q1g2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<RVHP>&, const mass_param_coll&);
 #if BH_USE_GMP
-template complex<RGMP> (*A2q1g2Q_G3_Tree_Ptr_eval(long hc))(const eval_param<RGMP>&, const mass_param_coll&);
+template complex<RGMP> (*A2q1g2Q_G3_Tree_Ptr_eval(long long hc))(const eval_param<RGMP>&, const mass_param_coll&);
 #endif
 
 }
