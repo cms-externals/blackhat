@@ -1,0 +1,6 @@
+* Partial: { q(1) qb(2) ; l(3) lb(4) }
+
+    phZW { q(1) qb(2) l(3) lb(4) }
+    born   { q(1) qb(2) l(3) lb(4) | (1*Nc^0)}
+    loop   {	LL       | q(1)  qb(2) Glb2(3) Gl2(4) | ((-1/Nc^1) + 1*Nc^1) }
+

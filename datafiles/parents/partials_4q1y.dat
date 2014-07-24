@@ -1,0 +1,23 @@
+* Partial: { q(1) Glb2(2) , Gl2(3) qb(4) ; y(5) }
+
+    phZW { q(1) qb(4) y(5) }
+    born   { q(1) Glb2(2) Gl2(3) qb(4) y(5) | (1*Nc^0)}
+    loop   { nfLL   | q(1)  Glb2(2) Gl2(3) qb(4) g(5) | (1*Nc^0)
+        LL     | q(1)  Glb2(2) Gl2(3) qb(4) g(5) | (-2/Nc^1 + 1*Nc^1)
+        LR     | q(1)  qb(4) Gl2(3) Glb2(2) g(5) | (-1/Nc^1)
+        LR     | q(1)  qb(4) g(5) Gl2(3) Glb2(2) | (-1/Nc^1)
+        LR     | q(1)  qb(4) Gl2(3) g(5) Glb2(2) | (-1/Nc^1)
+        LR     | q(1)  Gl2(3) Glb2(2) qb(4) g(5) | (-2/Nc^1)
+	    LL     | q(1)  Gl2(3) Glb2(2) qb(4) g(5) | (1/Nc^1) }
+
+* Partial: { q(1) qb(2) , Gl2(3) Glb2(4) ; y(5) }
+
+    phZW { q(1) qb(2) y(5) }
+    born   { q(1) qb(2) Gl2(3) Glb2(4) y(5) | (-1/Nc^1)}
+    loop   {	LR     | q(1)  Gl2(3) Glb2(4) qb(2) g(5) | (1/Nc^2 + 1*Nc^0)
+	nfLR   | q(1)  Gl2(3) Glb2(4) qb(2) g(5) | (1/Nc^1)
+	LR     | q(1)  qb(2) Gl2(3) Glb2(4) g(5) | (1/Nc^2)
+	LR     | q(1)  qb(2) Gl2(3) g(5) Glb2(4) | (1/Nc^2)
+	LR     | q(1)  qb(2) g(5) Gl2(3) Glb2(4) | (1/Nc^2)
+	LL     | q(1)  Gl2(3) Glb2(4) qb(2) g(5) | (-1/Nc^2)
+	LL     | q(1)  Glb2(4) Gl2(3) qb(2) g(5) | (1/Nc^2) }

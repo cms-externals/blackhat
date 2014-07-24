@@ -1,0 +1,2 @@
+#define BH_INSTALL_PATH "@prefix@"
+#define BH_SOURCE_PATH "@abs_top_srcdir@"

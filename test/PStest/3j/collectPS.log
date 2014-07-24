@@ -1,0 +1,68 @@
+
+// ## only one subprocess per PS point stored mode ## // run on: Fri Oct 12 17:36:27 2012
+
+
+// process 1:
+	int array1[]={1,1,21,1,1};
+	std::vector<int> prop_n1(array1,array1+sizeof(array1)/sizeof(int));
+	processes.push_back(prop_n1);
+
+// process 2:
+	int array2[]={1,-1,21,1,-1};
+	std::vector<int> prop_n2(array2,array2+sizeof(array2)/sizeof(int));
+	processes.push_back(prop_n2);
+
+// process 3:
+	int array3[]={1,-1,21,2,-2};
+	std::vector<int> prop_n3(array3,array3+sizeof(array3)/sizeof(int));
+	processes.push_back(prop_n3);
+
+// process 4:
+	int array4[]={1,-1,21,21,21};
+	std::vector<int> prop_n4(array4,array4+sizeof(array4)/sizeof(int));
+	processes.push_back(prop_n4);
+
+// process 5:
+	int array5[]={1,2,21,1,2};
+	std::vector<int> prop_n5(array5,array5+sizeof(array5)/sizeof(int));
+	processes.push_back(prop_n5);
+
+// process 6:
+	int array6[]={1,-2,21,1,-2};
+	std::vector<int> prop_n6(array6,array6+sizeof(array6)/sizeof(int));
+	processes.push_back(prop_n6);
+
+// process 7:
+	int array7[]={21,1,1,1,-1};
+	std::vector<int> prop_n7(array7,array7+sizeof(array7)/sizeof(int));
+	processes.push_back(prop_n7);
+
+// process 8:
+	int array8[]={21,1,1,2,-2};
+	std::vector<int> prop_n8(array8,array8+sizeof(array8)/sizeof(int));
+	processes.push_back(prop_n8);
+
+// process 9:
+	int array9[]={21,1,21,21,1};
+	std::vector<int> prop_n9(array9,array9+sizeof(array9)/sizeof(int));
+	processes.push_back(prop_n9);
+
+// process 10:
+	int array10[]={21,-1,1,-1,-1};
+	std::vector<int> prop_n10(array10,array10+sizeof(array10)/sizeof(int));
+	processes.push_back(prop_n10);
+
+// process 11:
+	int array11[]={21,-1,-1,2,-2};
+	std::vector<int> prop_n11(array11,array11+sizeof(array11)/sizeof(int));
+	processes.push_back(prop_n11);
+
+// process 12:
+	int array12[]={21,21,21,1,-1};
+	std::vector<int> prop_n12(array12,array12+sizeof(array12)/sizeof(int));
+	processes.push_back(prop_n12);
+
+// process 13:
+	int array13[]={21,21,21,21,21};
+	std::vector<int> prop_n13(array13,array13+sizeof(array13)/sizeof(int));
+	processes.push_back(prop_n13);

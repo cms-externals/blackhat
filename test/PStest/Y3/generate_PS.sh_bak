@@ -1,0 +1,51 @@
+#!/bin/bash
+#PBS -o log/
+#PBS -e log/
+#PBS -N Y3
+#PBS -q route
+#PBS -l walltime=10:00:00,nodes=1:ppn=1
+
+export PATH=$HOME/bin:/opt/intel/impi/4.0.0.028/bin64/:/usr/local/bin:/home/gdiana/root/bin:$PATH
+export ROOTSYS=/home/gdiana/root
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib
+
+####################
+# only edit from here
+testname=Y3
+BHdir=/home/hita/workspace/Harald_merge/
+sherparundir=/home/hita/workspace/SHERPA-MPI_MAR29/
+gridtime=30
+# only edit until here
+####################
+
+
+locdir=${BHdir}/test/PStest/${testname}
+cd $locdir
+
+#clean beofre we start
+touch {collectPS.log,PSpoints.dat,Process,r0}
+rm -fr {collectPS.log,PSpoints.dat,Process,r0}
+
+
+#lib and grid generation
+cp BHsettings_grid BHsettings
+$sherparundir/bin/Sherpa
+echo "++++++++++++++++++"
+./makelibs
+echo "++++++++++++++++++"
+$sherparundir/bin/Sherpa &
+
+echo "++++++++++++++++++"
+#generate grid
+pid=$! 
+sleep $gridtime;
+if ps -p $pid >/dev/null; then kill $pid; fi
+
+#integration
+cp BHsettings_collect BHsettings
+$sherparundir/bin/Sherpa
+
+rm -fr {BHsettings,Process,r0,Analysis,makelibs,Sherpa_References.tex}
+
+
+

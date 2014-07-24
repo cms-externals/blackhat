@@ -1,0 +1,51 @@
+* LL { q(1) Glb2(2) Gl2(3) qb(4) y(5) }
+
+    qb101 [q(1)] g [Glb2(2)] Glb102 [Gl2(3)] g [qb(4)] qb101 [y(5)]
+
+* LL { q(1) qb(2) y(5) Glb2(3) Gl2(4)|q(1) qb(2) Glb2(3) Gl2(4) y(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [y(5)] qb101 [Glb2(3) Gl2(4)]
+    qb101 [q(1)] g [qb(2)] qb101 [Glb2(3) Gl2(4)] qb101 [y(5)]
+
+* LL { qb(4) y(5) q(1) Gl2(2) Glb2(3) }
+
+    Glb102 [qb(4) y(5) q(1)] Glb102 [Gl2(2)] g [Glb2(3)]
+
+* LR { q(1) Gl2(2) Glb2(3) qb(4) y(5) }
+
+    qb101 [q(1)] g [Gl2(2)] Gl102 [Glb2(3)] g [qb(4)] qb101 [y(5)]
+
+* LR { q(1) qb(2) y(5) Gl2(3) Glb2(4)|q(1) qb(2) Gl2(3) Glb2(4) y(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [y(5)] qb101 [Gl2(3) Glb2(4)]
+    qb101 [q(1)] g [qb(2)] qb101 [Gl2(3) Glb2(4)] qb101 [y(5)]
+
+* LR { qb(4) y(5) q(1) Glb2(2) Gl2(3) }
+
+    Gl102 [qb(4) y(5) q(1)] Gl102 [Glb2(2)] g [Gl2(3)]
+
+* nfLL { qb(4) y(5) q(1) Glb2(2) Gl2(3) }
+
+    qb104 [qb(4) y(5) q(1)] qb104 [Glb2(2) Gl2(3)]
+
+* nfLR { qb(4) y(5) q(1) Gl2(2) Glb2(3) }
+
+    qb104 [qb(4) y(5) q(1)] qb104 [Gl2(2) Glb2(3)]
+
+* leading_color { q(1) Glb2(2) Gl2(3) qb(4) y(5) }
+
+    qb101 [q(1)] g [Glb2(2)] Glb102 [Gl2(3)] g [qb(4)] qb101 [y(5)]
+
+* nf { qb(4) y(5) q(1) Glb2(2) Gl2(3) }
+
+    qb104 [qb(4) y(5) q(1)] qb104 [Glb2(2) Gl2(3)]
+
+
+* leading_color { q(1) Glb3(2) Gl3(3) qb(4) y(5) }
+
+    qb101 [q(1)] g [Glb3(2)] Glb103 [Gl3(3)] g [qb(4)] qb101 [y(5)]
+
+* nf { qb(4) y(5) q(1) Glb3(2) Gl3(3) }
+
+    qb104 [qb(4) y(5) q(1)] qb104 [Glb3(2) Gl3(3)]
+

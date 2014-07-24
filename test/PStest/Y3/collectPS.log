@@ -1,0 +1,123 @@
+
+// ## only one subprocess per PS point stored mode ## // run on: Fri Oct 12 17:45:36 2012
+
+
+// process 1:
+	int array1[]={1,1,22,21,1,1};
+	std::vector<int> prop_n1(array1,array1+sizeof(array1)/sizeof(int));
+	processes.push_back(prop_n1);
+
+// process 2:
+	int array2[]={1,-1,22,21,1,-1};
+	std::vector<int> prop_n2(array2,array2+sizeof(array2)/sizeof(int));
+	processes.push_back(prop_n2);
+
+// process 3:
+	int array3[]={1,-1,22,21,2,-2};
+	std::vector<int> prop_n3(array3,array3+sizeof(array3)/sizeof(int));
+	processes.push_back(prop_n3);
+
+// process 4:
+	int array4[]={1,-1,22,21,3,-3};
+	std::vector<int> prop_n4(array4,array4+sizeof(array4)/sizeof(int));
+	processes.push_back(prop_n4);
+
+// process 5:
+	int array5[]={1,-1,22,21,21,21};
+	std::vector<int> prop_n5(array5,array5+sizeof(array5)/sizeof(int));
+	processes.push_back(prop_n5);
+
+// process 6:
+	int array6[]={1,2,22,21,1,2};
+	std::vector<int> prop_n6(array6,array6+sizeof(array6)/sizeof(int));
+	processes.push_back(prop_n6);
+
+// process 7:
+	int array7[]={1,-2,22,21,1,-2};
+	std::vector<int> prop_n7(array7,array7+sizeof(array7)/sizeof(int));
+	processes.push_back(prop_n7);
+
+// process 8:
+	int array8[]={1,3,22,21,1,3};
+	std::vector<int> prop_n8(array8,array8+sizeof(array8)/sizeof(int));
+	processes.push_back(prop_n8);
+
+// process 9:
+	int array9[]={1,-3,22,21,1,-3};
+	std::vector<int> prop_n9(array9,array9+sizeof(array9)/sizeof(int));
+	processes.push_back(prop_n9);
+
+// process 10:
+	int array10[]={21,1,22,1,1,-1};
+	std::vector<int> prop_n10(array10,array10+sizeof(array10)/sizeof(int));
+	processes.push_back(prop_n10);
+
+// process 11:
+	int array11[]={21,1,22,1,2,-2};
+	std::vector<int> prop_n11(array11,array11+sizeof(array11)/sizeof(int));
+	processes.push_back(prop_n11);
+
+// process 12:
+	int array12[]={21,1,22,1,3,-3};
+	std::vector<int> prop_n12(array12,array12+sizeof(array12)/sizeof(int));
+	processes.push_back(prop_n12);
+
+// process 13:
+	int array13[]={21,1,22,21,21,1};
+	std::vector<int> prop_n13(array13,array13+sizeof(array13)/sizeof(int));
+	processes.push_back(prop_n13);
+
+// process 14:
+	int array14[]={2,-1,22,21,2,-1};
+	std::vector<int> prop_n14(array14,array14+sizeof(array14)/sizeof(int));
+	processes.push_back(prop_n14);
+
+// process 15:
+	int array15[]={21,-1,22,1,-1,-1};
+	std::vector<int> prop_n15(array15,array15+sizeof(array15)/sizeof(int));
+	processes.push_back(prop_n15);
+
+// process 16:
+	int array16[]={21,-1,22,-1,2,-2};
+	std::vector<int> prop_n16(array16,array16+sizeof(array16)/sizeof(int));
+	processes.push_back(prop_n16);
+
+// process 17:
+	int array17[]={21,-1,22,-1,3,-3};
+	std::vector<int> prop_n17(array17,array17+sizeof(array17)/sizeof(int));
+	processes.push_back(prop_n17);
+
+// process 18:
+	int array18[]={2,-2,22,21,1,-1};
+	std::vector<int> prop_n18(array18,array18+sizeof(array18)/sizeof(int));
+	processes.push_back(prop_n18);
+
+// process 19:
+	int array19[]={21,2,22,2,1,-1};
+	std::vector<int> prop_n19(array19,array19+sizeof(array19)/sizeof(int));
+	processes.push_back(prop_n19);
+
+// process 20:
+	int array20[]={-2,-2,22,21,-2,-2};
+	std::vector<int> prop_n20(array20,array20+sizeof(array20)/sizeof(int));
+	processes.push_back(prop_n20);
+
+// process 21:
+	int array21[]={-2,-4,22,21,-2,-4};
+	std::vector<int> prop_n21(array21,array21+sizeof(array21)/sizeof(int));
+	processes.push_back(prop_n21);
+
+// process 22:
+	int array22[]={21,-2,22,-2,1,-1};
+	std::vector<int> prop_n22(array22,array22+sizeof(array22)/sizeof(int));
+	processes.push_back(prop_n22);
+
+// process 23:
+	int array23[]={21,-2,22,21,21,-2};
+	std::vector<int> prop_n23(array23,array23+sizeof(array23)/sizeof(int));
+	processes.push_back(prop_n23);
+
+// process 24:
+	int array24[]={21,21,22,21,1,-1};
+	std::vector<int> prop_n24(array24,array24+sizeof(array24)/sizeof(int));
+	processes.push_back(prop_n24);

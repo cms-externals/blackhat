@@ -1,0 +1,18 @@
+* Partial: { q(1) g(2) g(3) qb(4) }
+
+    phZW {}
+    born   { q(1) g(2) g(3) qb(4) | (1*Nc^0)}
+    loop   {	L       | q(1)  qb(4) g(3) g(2) | (-1/Nc^1)
+	L       | q(1)  g(2) g(3) qb(4) | (1*Nc^1)
+	nfL     | q(1)  g(2) g(3) qb(4) | (1*Nc^0) }
+
+* Partial: { q(1) qb(2) , g(3) g(4) }
+
+    phZW {}
+    born   {}
+    loop   {	L       | q(1)  qb(2) g(3) g(4) | (1*Nc^0)
+	L       | q(1)  qb(2) g(4) g(3) | (1*Nc^0)
+	L       | q(1)  g(3) qb(2) g(4) | (1*Nc^0)
+	L       | q(1)  g(3) g(4) qb(2) | (1*Nc^0)
+	L       | q(1)  g(4) qb(2) g(3) | (1*Nc^0)
+	L       | q(1)  g(4) g(3) qb(2) | (1*Nc^0) }

@@ -1,0 +1,66 @@
+* Partial: { g(1) g(2) g(3) g(4) g(5) g(6) }
+
+    phZW {}
+    born   { g(1) g(2) g(3) g(4) g(5) g(6) | (1*Nc^0)}
+    loop   {	glue       | g(1) g(2) g(3) g(4) g(5) g(6) | (1*Nc^1) 
+	nf       | g(1) g(2) g(3) g(4) g(5) g(6) | (1*Nc^0) }
+
+* Partial: { g(1) g(2) , g(3) g(4) g(5) g(6) }
+
+    phZW {}
+    born   {}
+    loop   {	glue       | g(1) g(2) g(3) g(6) g(5) g(4) | (1*Nc^0)
+	glue       | g(1) g(2) g(4) g(3) g(6) g(5) | (1*Nc^0)
+	glue       | g(1) g(2) g(5) g(4) g(3) g(6) | (1*Nc^0)
+	glue       | g(1) g(2) g(6) g(5) g(4) g(3) | (1*Nc^0)
+    glue       | g(1) g(3) g(2) g(6) g(5) g(4) | (1*Nc^0)
+	glue       | g(1) g(4) g(2) g(3) g(6) g(5) | (1*Nc^0)
+	glue       | g(1) g(5) g(2) g(4) g(3) g(6) | (1*Nc^0)
+	glue       | g(1) g(6) g(2) g(5) g(4) g(3) | (1*Nc^0)
+    glue       | g(1) g(3) g(6) g(2) g(5) g(4) | (1*Nc^0)
+	glue       | g(1) g(4) g(3) g(2) g(6) g(5) | (1*Nc^0)
+	glue       | g(1) g(5) g(4) g(2) g(3) g(6) | (1*Nc^0)
+	glue       | g(1) g(6) g(5) g(2) g(4) g(3) | (1*Nc^0)
+    glue       | g(1) g(3) g(6) g(5) g(2) g(4) | (1*Nc^0)
+	glue       | g(1) g(4) g(3) g(6) g(2) g(5) | (1*Nc^0)
+	glue       | g(1) g(5) g(4) g(3) g(2) g(6) | (1*Nc^0)
+	glue       | g(1) g(6) g(5) g(4) g(2) g(3) | (1*Nc^0)
+    glue       | g(1) g(3) g(6) g(5) g(4) g(2) | (1*Nc^0)
+	glue       | g(1) g(4) g(3) g(6) g(5) g(2) | (1*Nc^0)
+	glue       | g(1) g(5) g(4) g(3) g(6) g(2) | (1*Nc^0)
+	glue       | g(1) g(6) g(5) g(4) g(3) g(2) | (1*Nc^0) } 
+
+* Partial: { g(1) g(2) g(3) , g(4) g(5) g(6) }
+
+    phZW {}
+    born   {}
+    loop   {	glue       | g(1)  g(2) g(3) g(4) g(6) g(5) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(3) g(5) g(4) g(6) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(3) g(6) g(5) g(4) | (-1*Nc^0)
+    glue       | g(1)  g(2) g(4) g(3) g(6) g(5) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(5) g(3) g(4) g(6) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(6) g(3) g(5) g(4) | (-1*Nc^0)
+    glue       | g(1)  g(2) g(4) g(6) g(3) g(5) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(5) g(4) g(3) g(6) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(6) g(5) g(3) g(4) | (-1*Nc^0)
+    glue       | g(1)  g(2) g(4) g(6) g(5) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(5) g(4) g(6) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(2) g(6) g(5) g(4) g(3) | (-1*Nc^0)
+    glue       | g(1)  g(4) g(2) g(3) g(6) g(5) | (-1*Nc^0)
+	glue       | g(1)  g(5) g(2) g(3) g(4) g(6) | (-1*Nc^0)
+	glue       | g(1)  g(6) g(2) g(3) g(5) g(4) | (-1*Nc^0)
+    glue       | g(1)  g(4) g(2) g(6) g(3) g(5) | (-1*Nc^0)
+	glue       | g(1)  g(5) g(2) g(4) g(3) g(6) | (-1*Nc^0)
+	glue       | g(1)  g(6) g(2) g(5) g(3) g(4) | (-1*Nc^0)
+    glue       | g(1)  g(4) g(2) g(6) g(5) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(5) g(2) g(4) g(6) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(6) g(2) g(5) g(4) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(4) g(6) g(2) g(3) g(5) | (-1*Nc^0)
+	glue       | g(1)  g(5) g(4) g(2) g(3) g(6) | (-1*Nc^0)
+	glue       | g(1)  g(6) g(5) g(2) g(3) g(4) | (-1*Nc^0) 
+    glue       | g(1)  g(4) g(6) g(2) g(5) g(3) | (-1*Nc^0)
+    glue       | g(1)  g(5) g(4) g(2) g(6) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(6) g(5) g(2) g(4) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(4) g(6) g(5) g(2) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(5) g(4) g(6) g(2) g(3) | (-1*Nc^0)
+	glue       | g(1)  g(6) g(5) g(4) g(2) g(3) | (-1*Nc^0) }

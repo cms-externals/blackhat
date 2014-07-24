@@ -1,0 +1,18 @@
+
+// ## only one subprocess per PS point stored mode ## // run on: Fri Oct 12 20:27:26 2012
+
+
+// process 1:
+	int array1[]={1,-1,22,21};
+	std::vector<int> prop_n1(array1,array1+sizeof(array1)/sizeof(int));
+	processes.push_back(prop_n1);
+
+// process 2:
+	int array2[]={21,1,22,1};
+	std::vector<int> prop_n2(array2,array2+sizeof(array2)/sizeof(int));
+	processes.push_back(prop_n2);
+
+// process 3:
+	int array3[]={21,-2,22,-2};
+	std::vector<int> prop_n3(array3,array3+sizeof(array3)/sizeof(int));
+	processes.push_back(prop_n3);

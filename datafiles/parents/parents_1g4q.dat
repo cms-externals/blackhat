@@ -1,0 +1,144 @@
+* LL { q(1) Glb2(2) Gl2(3) g(4) qb(5) }
+
+    qb101 [q(1)] g [Glb2(2)] Glb102 [Gl2(3)] g [g(4)] g [qb(5)]
+
+* LL { q(1) Glb2(2) Gl2(3) qb(4) g(5) }
+
+    qb101 [q(1)] g [Glb2(2)] Glb102 [Gl2(3)] g [qb(4)] qb101 [g(5)]
+
+* LL { q(1) Glb2(2) g(3) Gl2(4) qb(5) }
+
+    qb101 [q(1)] g [Glb2(2)] Glb102 [g(3)] Glb102 [Gl2(4)] g [qb(5)]
+
+* LL { q(1) g(2) Glb2(3) Gl2(4) qb(5) }
+
+    qb101 [q(1)] g [g(2)] g [Glb2(3)] Glb102 [Gl2(4)] g [qb(5)]
+
+* LL { q(1) g(2) qb(3) Glb2(4) Gl2(5) }
+
+    qb101 [q(1)] g [g(2)] g [qb(3)] qb101 [Glb2(4) Gl2(5)]
+
+* LL { q(1) qb(2) Glb2(3) Gl2(4) g(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [Glb2(3) Gl2(4)] qb101 [g(5)]
+
+* LL { q(1) qb(2) Glb2(3) g(4) Gl2(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [Glb2(3) g(4) Gl2(5)]
+
+* LL { q(1) qb(2) g(3) Glb2(4) Gl2(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [g(3)] qb101 [Glb2(4) Gl2(5)]
+
+* LL { qb(4) g(5) q(1) Gl2(2) Glb2(3) }
+
+    Glb102 [qb(4) g(5) q(1)] Glb102 [Gl2(2)] g [Glb2(3)]
+
+* LL { qb(5) q(1) Gl2(2) Glb2(3) g(4) }
+
+    Glb102 [qb(5) q(1)] Glb102 [Gl2(2)] g [Glb2(3)] Glb102 [g(4)]
+
+* LL { qb(5) q(1) Gl2(2) g(3) Glb2(4) }
+
+    Glb102 [qb(5) q(1)] Glb102 [Gl2(2)] g [g(3)] g [Glb2(4)]
+
+* LL { qb(5) q(1) g(2) Gl2(3) Glb2(4) }
+
+    Glb102 [qb(5) q(1)] Glb102 [g(2)] Glb102 [Gl2(3)] g [Glb2(4)]
+
+* LR { q(1) Gl2(2) Glb2(3) g(4) qb(5) }
+
+    qb101 [q(1)] g [Gl2(2)] Gl102 [Glb2(3)] g [g(4)] g [qb(5)]
+
+* LR { q(1) Gl2(2) Glb2(3) qb(4) g(5) }
+
+    qb101 [q(1)] g [Gl2(2)] Gl102 [Glb2(3)] g [qb(4)] qb101 [g(5)]
+
+* LR { q(1) Gl2(2) g(3) Glb2(4) qb(5) }
+
+    qb101 [q(1)] g [Gl2(2)] Gl102 [g(3)] Gl102 [Glb2(4)] g [qb(5)]
+
+* LR { q(1) g(2) Gl2(3) Glb2(4) qb(5) }
+
+    qb101 [q(1)] g [g(2)] g [Gl2(3)] Gl102 [Glb2(4)] g [qb(5)]
+
+* LR { q(1) g(2) qb(3) Gl2(4) Glb2(5) }
+
+    qb101 [q(1)] g [g(2)] g [qb(3)] qb101 [Gl2(4) Glb2(5)]
+
+* LR { q(1) qb(2) Gl2(3) Glb2(4) g(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [Gl2(3) Glb2(4)] qb101 [g(5)]
+
+* LR { q(1) qb(2) Gl2(3) g(4) Glb2(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [Gl2(3) g(4) Glb2(5)]
+
+* LR { q(1) qb(2) g(3) Gl2(4) Glb2(5) }
+
+    qb101 [q(1)] g [qb(2)] qb101 [g(3)] qb101 [Gl2(4) Glb2(5)]
+
+* LR { qb(4) g(5) q(1) Glb2(2) Gl2(3) }
+
+    Gl102 [qb(4) g(5) q(1)] Gl102 [Glb2(2)] g [Gl2(3)]
+
+* LR { qb(5) q(1) Glb2(2) Gl2(3) g(4) }
+
+    Gl102 [qb(5) q(1)] Gl102 [Glb2(2)] g [Gl2(3)] Gl102 [g(4)]
+
+* LR { qb(5) q(1) Glb2(2) g(3) Gl2(4) }
+
+    Gl102 [qb(5) q(1)] Gl102 [Glb2(2)] g [g(3)] g [Gl2(4)]
+
+* LR { qb(5) q(1) g(2) Glb2(3) Gl2(4) }
+
+    Gl102 [qb(5) q(1)] Gl102 [g(2)] Gl102 [Glb2(3)] g [Gl2(4)]
+
+* nfLL { Glb2(4) qb(5) q(1) Gl2(2) g(3) }
+
+    qb104 [Glb2(4) qb(5) q(1) Gl2(2)] qb104 [g(3)]
+
+* nfLL { qb(3) Glb2(4) Gl2(5) q(1) g(2) }
+
+    qb104 [qb(3) Glb2(4) Gl2(5) q(1)] qb104 [g(2)]
+
+* nfLL { qb(4) g(5) q(1) Glb2(2) Gl2(3) }
+
+    qb104 [qb(4) g(5) q(1)] qb104 [Glb2(2) Gl2(3)]
+
+* nfLL { qb(5) q(1) Glb2(2) Gl2(3) g(4) }
+
+    qb104 [qb(5) q(1)] qb104 [Glb2(2) Gl2(3)] qb104 [g(4)]
+
+* nfLL { qb(5) q(1) Glb2(2) g(3) Gl2(4) }
+
+    qb104 [qb(5) q(1)] qb104 [Glb2(2) g(3) Gl2(4)]
+
+* nfLL { qb(5) q(1) g(2) Glb2(3) Gl2(4) }
+
+    qb104 [qb(5) q(1)] qb104 [g(2)] qb104 [Glb2(3) Gl2(4)]
+
+* nfLR { Gl2(4) qb(5) q(1) Glb2(2) g(3) }
+
+    qb104 [Gl2(4) qb(5) q(1) Glb2(2)] qb104 [g(3)]
+
+* nfLR { qb(3) Gl2(4) Glb2(5) q(1) g(2) }
+
+    qb104 [qb(3) Gl2(4) Glb2(5) q(1)] qb104 [g(2)]
+
+* nfLR { qb(4) g(5) q(1) Gl2(2) Glb2(3) }
+
+    qb104 [qb(4) g(5) q(1)] qb104 [Gl2(2) Glb2(3)]
+
+* nfLR { qb(5) q(1) Gl2(2) Glb2(3) g(4) }
+
+    qb104 [qb(5) q(1)] qb104 [Gl2(2) Glb2(3)] qb104 [g(4)]
+
+* nfLR { qb(5) q(1) Gl2(2) g(3) Glb2(4) }
+
+    qb104 [qb(5) q(1)] qb104 [Gl2(2) g(3) Glb2(4)]
+
+* nfLR { qb(5) q(1) g(2) Gl2(3) Glb2(4) }
+
+    qb104 [qb(5) q(1)] qb104 [g(2)] qb104 [Gl2(3) Glb2(4)]
+

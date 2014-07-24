@@ -1,0 +1,54 @@
+READ BLOCK "compare_hist_mmpmmp_cut.dat"
+BLOCK xy "1:2"
+READ BLOCK "compare_hist_mmpmmp_cut_HP.dat"
+BLOCK xy "1:2"
+READ BLOCK "compare_hist_mmpmmp_rat.dat"
+BLOCK xy "1:2"
+READ BLOCK "compare_hist_mmpmmp_rat_HP.dat"
+BLOCK xy "1:2"
+READ BLOCK "@srcdir@/data/compare_hist_mmpmmp_cut.dat"
+BLOCK xy "1:2"
+READ BLOCK "@srcdir@/data/compare_hist_mmpmmp_cut_HP.dat"
+BLOCK xy "1:2"
+READ BLOCK "@srcdir@/data/compare_hist_mmpmmp_rat.dat"
+BLOCK xy "1:2"
+READ BLOCK "@srcdir@/data/compare_hist_mmpmmp_rat_HP.dat"
+BLOCK xy "1:2"
+
+s0 legend "cut single"
+s1 legend "cut double"
+s2 legend "rat single"
+s3 legend "rat double"
+s4 legend "cut single ref"
+s5 legend "cut double ref"
+s6 legend "rat single ref"
+s7 legend "rat double ref"
+
+s0 color "black"
+s4 color "black"
+
+s1 color "red"
+s5 color "red"
+
+s2 color "blue"
+s6 color "blue"
+
+s3 color "green"
+s7 color "green"
+
+s4 linestyle 3  
+s5 linestyle 3  
+s6 linestyle 3  
+s7 linestyle 3  
+
+LEGEND 0.85, 0.8
+
+title "Accuracy for --+--+"
+xaxis label "accuracy"
+yaxis label "fraction of the number of points"
+YAXES SCALE LOGARITHMIC
+autoscale 
+PRINT TO "compare_hist_mmpmmp.ps"
+PRINT
+SAVEALL "compare_hist_mmpmmp.agr"
+EXIT

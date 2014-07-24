@@ -1,0 +1,17 @@
+
+purpose: test MEs over many physical PS points
+author: harald
+
+1) need to setup subdirectories 
+   in PStest directory, 
+   e.g. PStest/Z2
+
+2) need to provide Run.dat files in
+   directories: PStest/Z2/Run.dat
+
+3) generate PSpoints and collectPS.log with
+   qsub submit.sh
+   need to adapt "list1" in get_PSdata.sh in order 
+   to avoid complete regeneration
+
+4) generate targets: ./get_targets.sh 

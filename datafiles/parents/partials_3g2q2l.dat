@@ -1,0 +1,48 @@
+* Partial: { q(1) g(2) g(3) g(4) qb(5) ; l(6) lb(7) }
+
+    phZW { q(1) qb(5) l(6) lb(7) }
+    born   { q(1) g(2) g(3) g(4) qb(5) l(6) lb(7) | (1*Nc^0)}
+    loop   {	L       | q(1)  qb(5) g(4) g(3) g(2) l(6) lb(7) | (1/Nc^1)
+	L       | q(1)  g(2) g(3) g(4) qb(5) l(6) lb(7) | (1*Nc^1)
+	nfL     | q(1)  g(2) g(3) g(4) qb(5) l(6) lb(7) | (1*Nc^0) }
+
+* Partial: { q(1) qb(2) , g(3) g(4) g(5) ; l(6) lb(7) }
+
+    phZW { q(1) qb(2) l(6) lb(7) }
+    born   {}
+    loop   {    L       | q(1)  qb(2) g(3) g(5) g(4) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  qb(2) g(4) g(3) g(5) l(6) lb(7) | (-1*Nc^0)
+    L       | q(1)  qb(2) g(5) g(4) g(3) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(3) qb(2) g(5) g(4) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(3) g(5) qb(2) g(4) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(3) g(5) g(4) qb(2) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(4) qb(2) g(3) g(5) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(4) g(3) qb(2) g(5) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(4) g(3) g(5) qb(2) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(5) qb(2) g(4) g(3) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(5) g(4) qb(2) g(3) l(6) lb(7) | (-1*Nc^0)
+	L       | q(1)  g(5) g(4) g(3) qb(2) l(6) lb(7) | (-1*Nc^0)
+	nfL     | q(1)  g(3) g(5) g(4) qb(2) l(6) lb(7) | (-1/Nc^1)
+	nfL     | q(1)  g(4) g(3) g(5) qb(2) l(6) lb(7) | (-1/Nc^1)
+	nfL     | q(1)  g(5) g(4) g(3) qb(2) l(6) lb(7) | (-1/Nc^1) 
+    nfL     | q(1)  g(3) g(5) qb(2) g(4) l(6) lb(7) | (-1/Nc^1)
+	nfL     | q(1)  g(4) g(3) qb(2) g(5) l(6) lb(7) | (-1/Nc^1)
+	nfL     | q(1)  g(5) g(4) qb(2) g(3) l(6) lb(7) | (-1/Nc^1) }
+
+
+* Partial: { q(1) g(2) qb(3) , g(4) g(5) ; l(6) lb(7) }
+
+    phZW { q(1) qb(3) l(6) lb(7) }
+    born   {}
+    loop   {    L       | q(1) g(2) qb(3) g(5) g(4) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(2) qb(3) g(4) g(5) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(2) g(4) qb(3) g(5) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(2) g(5) qb(3) g(4) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(4) g(2) qb(3) g(5) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(5) g(2) qb(3) g(4) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(4) g(5) g(2) qb(3) l(6) lb(7) | (1*Nc^0) 
+	L       | q(1)  g(5) g(4) g(2) qb(3) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(4) g(2) g(5) qb(3) l(6) lb(7) | (1*Nc^0)
+	L       | q(1)  g(5) g(2) g(4) qb(3) l(6) lb(7) | (1*Nc^0)
+    L       | q(1)  g(2) g(4) g(5) qb(3) l(6) lb(7) | (1*Nc^0)
+	L       | q(1)  g(2) g(5) g(4) qb(3) l(6) lb(7) | (1*Nc^0) }
