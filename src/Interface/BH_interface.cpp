@@ -1990,14 +1990,6 @@ void print_svn_version(std::ostream& os){
 void BH_interface::print_banner(){
 	static bool alreadyDone=false;
 	if (!alreadyDone){
-		cout << "====================================" << endl;
-		cout << " BlackHat                         " << endl;
-		cout << "                                  " << endl;
-		cout << " version info:                    " << endl;
-		print_svn_version(cout);
-		cout << "\nIf you use this program, please   " << endl;
-		cout << "cite arXiv:0803.4180              " << endl;
-		cout << "====================================" << endl;
 		alreadyDone=true;
 	}
 }
