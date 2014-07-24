@@ -489,7 +489,7 @@ protected:
 private:
         //no copy
         triangle_Darren(const triangle_Darren& cd);
-        triangle_Darren operator=(const triangle_Darren& cd);
+        triangle_Darren& operator=(const triangle_Darren& cd);
         void init();
 };
 
