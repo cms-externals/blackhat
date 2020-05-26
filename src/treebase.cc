@@ -31,10 +31,10 @@ template<class T> complex<T> A(momentum_configuration<T>& k,
                                const vector<particle_ID>& leg,
                                int algorithm,
                                // Electroweak vectors
-                               const vector<int>& vectorK /* momenta */ = empty,
-                               const vector<int>& polarization = empty,
-                               const vector<int>& coupleTo /* quark flavor */ = empty,
-                              const vector<int>& massValue = empty)
+                               const vector<int>& vectorK /* momenta */,
+                               const vector<int>& polarization,
+                               const vector<int>& coupleTo /* quark flavor */,
+                              const vector<int>& massValue)
 {vector<int> arg(leg.size()); // "leg" determines the number of arguments
  for (int i = 0;  i < arg.size();  i += 1) arg[i] = arg0[i];
  // cout << "A: " << leg.size() << ": ";
@@ -59,7 +59,7 @@ template<class T> complex<T> A(momentum_configuration<T>& k,
                                //                               const vector<int>& vectorK /* momenta */ = empty,
                                //                               const vector<int>& polarization = empty,
                                //                               const vector<int>& coupleTo /* quark flavor */ = empty,
-                               const vector<int>& massValue = empty)
+                               const vector<int>& massValue)
 {vector<particle_ID> leg;
   vector<int> vectorK(0), polarization(0), coupleTo(0);
   // Assume leptons are paired sequentially, all couple to 1st quark flavor

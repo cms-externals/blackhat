@@ -2044,8 +2044,8 @@ template<class T> complex<T>
 #endif
     const vector<ParticleID>& leg,
     int start, int end /* indices into the vectors */,
-    int offshellMass = defaultMass,
-    const vector<int>& massValue = empty)
+    int offshellMass,
+    const vector<int>& massValue)
 #if 0
     const vector<int>& leptons = empty
                      /* of leptons coupling via photon to the current,

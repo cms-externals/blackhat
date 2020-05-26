@@ -881,11 +881,11 @@ template<class T> complex<T>
                 of helicity L or R -- for helicity +/- the direction is
                 deduced from the helicity */,
     // Vector bosons
-    const vector<int>& vectorK /* momenta */ = empty,
-    const vector<int>& polarization = empty,
-    const vector<int>& coupleTo /* quark flavor */ = empty,
-    int offshellMass = defaultMass,
-    const vector<int>& massValue = empty)
+    const vector<int>& vectorK /* momenta */,
+    const vector<int>& polarization,
+    const vector<int>& coupleTo /* quark flavor */,
+    int offshellMass,
+    const vector<int>& massValue)
 { // Get reference momentum
  size_t ref /* index of reference momentum */;
  const string refKey(RefTag);

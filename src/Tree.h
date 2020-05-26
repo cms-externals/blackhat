@@ -49,7 +49,7 @@ template<class T> std::complex<T>
     const std::vector<int>& arg /* indices of arguments */,
     const std::vector<particle_ID>& leg,
     int start, int end /* indices into the vectors */,
-    int offshellMass = -1,
+    int offshellMass = defaultMass,
     const std::vector<int>& massValue = empty);
 
 template<class T> std::complex<T>
@@ -63,7 +63,7 @@ template<class T> std::complex<T>
      const std::vector<int>& vectorK /* momenta */ = empty,
      const std::vector<int>& polarization = empty,
      const std::vector<int>& coupleTo /* quark flavor */ = empty,
-     int offshellMass = -1,
+     int offshellMass = defaultMass,
      const std::vector<int>& massValue = empty);
 
 

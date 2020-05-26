@@ -197,7 +197,7 @@ map<int,int> MassIndexCount(const vector<int>& massValue, int start, int end)
 template<class T> int
   MomentumSum(momentum_configuration<T>& k,
               const vector<int>& v, int start, int end,
-              const vector<int>& extraK = empty)
+              const vector<int>& extraK)
 {/* For massless complex momenta, we must be careful to preserve the
     separate lambda and lambda-tilde spinors, which will in general not
     be identical to those produced by the "insert" below, even if k[sum]
@@ -236,7 +236,7 @@ template<class T> int
 template<class T> /* static */ int FlatSum(momentum_configuration<T>& k,
             int ref /* index of reference momentum */,
                                            const vector<int>& v, int start, int end,
-                                           const vector<int>& extraK = empty)
+                                           const vector<int>& extraK)
 {// cout << "In FS " << start << ", " << end << endl;
  /* For massless complex momenta, we must be careful to preserve the
     separate lambda and lambda-tilde spinors, which will in general not
@@ -318,7 +318,7 @@ template<class T> int
   NegativeFlatSum(momentum_configuration<T>& k,
                   int ref /* index of reference momentum */,
                   const vector<int>& v, int s1, int e1,
-                  int ev, const vector<int>& extraK = empty)
+                  int ev, const vector<int>& extraK)
 // With added vector momentum index "ev"
 {// cout << "In NFS " << s1 << ", " << e1 << "; " << s2 << ", " << e2 << endl;
 

@@ -748,10 +748,10 @@ template<class T> complex<T>
         const vector<int>& arg /* indices of arguments */,
         const vector<particle_ID>& leg /* helicities and particle ids */,
         // Vector bosons
-        const vector<int>& vectorK /* momenta */ = empty,
-        const vector<int>& polarization = empty,
-        const vector<int>& coupleTo /* quark flavor */ = empty,
-        const vector<int>& massValue = empty)
+        const vector<int>& vectorK /* momenta */,
+        const vector<int>& polarization,
+        const vector<int>& coupleTo /* quark flavor */,
+        const vector<int>& massValue)
 { // until the right routine is available:
  vector<int> helicity = Helicities(leg);
  vector<int> idcode = ParticleCode(leg);
