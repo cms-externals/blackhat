@@ -55,9 +55,9 @@ void partial_process_coupling_from_string(const std::string& process_str,
 		std::vector<std::string > & color_info);
 		//vector<size_t> & color_info);
 
-bool sorted_permutation(const vector<int> perm, const vector<int> trace_begin, const vector<int> trace_end);
-int free_orbit_size(const vector<int> trace_begin, const vector<int> trace_end);
-void permutation_orbit(const vector< plabel>& plabels,const vector<int>& perm,vector<vector<int> >& perm_orbit, vector<std::string >& color_info);
+bool sorted_permutation(const std::vector<int> perm, const std::vector<int> trace_begin, const std::vector<int> trace_end);
+int free_orbit_size(const std::vector<int> trace_begin, const std::vector<int> trace_end);
+void permutation_orbit(const std::vector< plabel>& plabels,const std::vector<int>& perm,std::vector<std::vector<int> >& perm_orbit, std::vector<std::string >& color_info);
 
 
 bool compr(const cross_term_entry* cte1, const cross_term_entry* cte2);
@@ -77,7 +77,7 @@ int PA_from_file(
 	    Squared_ME* ME,
 		const std::string& filename,
 		std::string part_type,
-		const vector<plabel> & pro,
+		const std::vector<plabel> & pro,
 		const std::vector<std::vector<pair<int,int> > >& coupling,
 		const std::vector<std::string >& color_info,
 		std::vector<kinematic_function*> prop_hel_fn);

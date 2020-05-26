@@ -107,11 +107,11 @@ public:
 	virtual double get_finite_VHP();
     void set_partial_born();
     virtual void get_map(
-        vector<vector<int> >& permutation,
-        vector<vector<int> >& helicity);
+	std::vector<std::vector<int> >& permutation,
+        std::vector<std::vector<int> >& helicity);
     virtual void get_vals(
-        vector<double* >& re_ampl,
-        vector<double* >& im_ampl);
+	std::vector<double* >& re_ampl,
+        std::vector<double* >& im_ampl);
     virtual int get_order_qcd(){return d_VSM_p->get_order_qcd();};
     virtual int get_order_qed(){return d_VSM_p->get_order_qed();};
 	virtual double getScaleVariationCoefficient(int logMuOrder);

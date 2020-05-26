@@ -32,7 +32,7 @@ plabel plabel_from_string(const std::string& s);
 std::string GetParentDataDirectory();
 std::string get_worker_dir(const std::string& subdir);
 
-void read_processes(const std::string& input,	vector<vector<plabel> >& labels);
+ void read_processes(const std::string& input,	std::vector<std::vector<plabel> >& labels);
 
 
 

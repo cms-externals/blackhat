@@ -86,7 +86,7 @@ class prop_hel_fn : public kinematic_function {
 	int m_j;
 	int m_photonZW; //[0,1,2] corresponds to [photon,photon&Z,W]
 	bool m_up_down_quark; //[0,1] corresponds to [up,down]
-	int m_leading_vect_ax; //[0,1,2] corresponds to [leading,vectorial,axial]
+	int m_leading_vect_ax; //[0,1,2] corresponds to [leading,std::vectorial,axial]
 	std::vector<ph_type> m_ql_ph_type;
 public:
 	prop_hel_fn(bool up_down_quark,int photonZW, int leading_vect_ax, int i, int j, const std::vector<ph_type> ql_ph_type);
@@ -288,7 +288,7 @@ struct Ampl_Info {
     std::vector<int> m_perm, m_hels;
     double* real;
     double* imag;
-    Ampl_Info(const process& pro, const vector<int>& ind,double * real, double * imag);
+  Ampl_Info(const process& pro, const std::vector<int>& ind,double * real, double * imag);
 };
 
 class Squared_ME 
@@ -352,7 +352,7 @@ public:
 	//
     virtual void set_partial_born(){return;};
     virtual void set_couplings(R couplings){_couplings=couplings;};
-    virtual vector<Ampl_Info* >  get_partial_born(){ return vector<Ampl_Info* >(); };
+    virtual std::vector<Ampl_Info* >  get_partial_born(){ return std::vector<Ampl_Info* >(); };
     virtual int add(Ampl_Info* ampl_info){return 0;}
     // 
 	virtual ~Squared_ME();
@@ -392,9 +392,9 @@ class Squared_ME_Struct: public Squared_ME {
     //vector< pair< pos-m_kin_fn_vals, pos-m_tree_vals > >
     std::vector<std::pair<std::vector<int>,int> > m_trees; 
     //std::map<std::pair< kn_fn, kn_fn >, std::map<tree-left  ,std::map<tree-right,pre-factor> > > m_cross_terms;
-    std::map<std::pair<vector<int>,vector<int> >, std::map<int,std::map<int,double> > > m_cross_terms;
+    std::map<std::pair<std::vector<int>,std::vector<int> >, std::map<int,std::map<int,double> > > m_cross_terms;
     //iterators
-    std::map<std::pair<vector<int>,vector<int> >, std::map<int,std::map<int,double> > >::const_iterator it_ct;
+    std::map<std::pair<std::vector<int>,std::vector<int> >, std::map<int,std::map<int,double> > >::const_iterator it_ct;
     std::map<int,std::map<int,double> >::const_iterator it_lt;
     std::map<int,double>::const_iterator it_rtp;
     //
@@ -499,7 +499,7 @@ class Squared_ME_Struct: public Squared_ME {
     //for controlling subtraction terms
     virtual void set_partial_born();
     virtual void set_couplings(R couplings){m_couplings=couplings;};
-    virtual vector<Ampl_Info* >  get_partial_born(){
+    virtual std::vector<Ampl_Info* >  get_partial_born(){
         return partial_tree_ampls ;
     };
     virtual int add(Ampl_Info* ampl_info){
@@ -545,11 +545,11 @@ public:
     virtual int get_order_qcd(){return m_order_qcd;};
     virtual int get_order_qed(){return m_order_qed;};
     virtual void get_partial_born_map(
-        vector<vector<int> >& permutation,
-        vector<vector<int> >& helicity);
+	std::vector<std::vector<int> >& permutation,
+        std::vector<std::vector<int> >& helicity);
     virtual void get_vals_partial_born(
-                vector<double* >& re_partial_born,
-                vector<double* >& im_partial_born);
+	std::vector<double* >& re_partial_born,
+	std::vector<double* >& im_partial_born);
 	virtual ~Virtual_SME();
 	void dry_run();
 //the copy and assignments are expensive, we restrict their use.

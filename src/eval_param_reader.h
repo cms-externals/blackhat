@@ -23,7 +23,7 @@ protected:
 	size_t nbr_particles;
 	std::ios::pos_type start_pos;
 	
-	vector<Cmom<T>* > _momenta;
+	std::vector<Cmom<T>* > _momenta;
 public :
 	//! constructor
 	eval_param_reader(const char* path,int nbr_p);

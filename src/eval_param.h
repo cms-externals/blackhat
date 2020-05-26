@@ -297,7 +297,7 @@ template <class T> class eval_param {
 #endif
 public:
 	eval_param(int n);
-	eval_param(const vector<Cmom<T> >& vec) ;
+	eval_param(const std::vector<Cmom<T> >& vec) ;
 	eval_param(momentum_configuration<T>& mc, std::vector<int>& ind);
 	eval_param(momentum_configuration<T>& mc, const std::vector<int>& ind);
 	~eval_param() {delete[] _em; delete _epstate;};

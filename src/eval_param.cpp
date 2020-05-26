@@ -33,7 +33,7 @@ template <> eval_param<RGMP>::eval_param(int n){
 	BH_DEBUG_MESSAGE("Using new constructor");
 }
 
-template <> eval_param<RGMP>::eval_param(const vector<Cmom<RGMP> >& vec) {
+  template <> eval_param<RGMP>::eval_param(const std::vector<Cmom<RGMP> >& vec) {
 	_size=vec.size();
 	_em=new const Cmom<RGMP>*[vec.size()];
 	for(int i=0;i<_size;i++){_em[i]=&vec[i];} ;
@@ -70,7 +70,7 @@ template <class T> eval_param<T>::eval_param(int n) {
 	_epstate=new eval_param_state(_size);
 };
 
-template <class T> eval_param<T>::eval_param(const vector<Cmom<T> >& vec) {
+  template <class T> eval_param<T>::eval_param(const std::vector<Cmom<T> >& vec) {
 	_size=vec.size();
 	_em=new const Cmom<T>*[vec.size()];
 	for(int i=0;i<_size;i++){_em[i]=&vec[i];} ;
