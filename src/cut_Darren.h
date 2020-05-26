@@ -41,7 +41,7 @@ namespace BH {
 #define JOIN( X, Y ) JOIN2(X,Y)
 #define JOIN2( X, Y ) X##Y
 
-namespace static_assert
+namespace static_assert_private
 {
     template <bool> struct STATIC_ASSERT_FAILURE;
     template <> struct STATIC_ASSERT_FAILURE<true> { enum { value = 1 }; };
@@ -50,8 +50,8 @@ namespace static_assert
 }
 
 #define COMPILE_ASSERT(x) \
-    typedef ::static_assert::static_assert_test<\
-        sizeof(::static_assert::STATIC_ASSERT_FAILURE< (bool)( x ) >)>\
+    typedef ::static_assert_private::static_assert_test<\
+        sizeof(::static_assert_private::STATIC_ASSERT_FAILURE< (bool)( x ) >)>\
             JOIN(_static_assert_typedef, __LINE__)
 
 #else // __cplusplus
